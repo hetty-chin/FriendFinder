@@ -179,7 +179,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" style="max-width: 500px">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -265,6 +265,10 @@
           $("#results-modal").modal("toggle");
 
         });
+
+        // reset all the fields
+        $("#name, #photo").val("");
+        $("#q1_chosen span, #q2_chosen span, #q3_chosen span, #q4_chosen span, #q5_chosen span, #q6_chosen span, #q7_chosen span, #q8_chosen span, #q9_chosen span, #q10_chosen span").text("Select an Option");
       } else {
         alert("Please fill out all fields before submitting!");
       }
