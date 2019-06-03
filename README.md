@@ -22,3 +22,14 @@ At first I thought I needed to get the sum of the array of the answers. I used t
 So, I created a loop to run through all the friends in the friends javascript, and in this loop, I added another loop to run through each of the scores for each friend. Each score was compared the the score of the new user input. This would result in individual answer differences. Then I totaled up the individual differences for a total difference between potential friends. 
 To select the friend with the least difference I created a variable called scoreCurrentLeastDiff. I set it at 40 because that's the max difference. 
 Inside the loop that runs through each friend, I set an if function. If the total difference for that friend was less than the current lowest score, that score would become the new lowest and that friend became the best match. 
+
+## Clean up and customize
+Since I borrowed all code, I switched some stuff up.
+I removed some errors from the original code - image links that no longer worked. 
+I populated the friends.js with a few characters. Set the max width of the image so it doesn't expand beyond the modal.
+I reset the fields after the survey was entered. I did so by selecting multiple id's (the name and photo) and setting them back to "". For the chosen answers, I selected multiple id's then selected the span tag underneath them and changed them back to the original "Select an Option".
+I didn't like that it had a facebook icon so I took it off. 
+Updated to my github page on the index page.
+
+If I had more time, I would not use the chosen drop down and instead do radio buttons -- probably the ones from bootstrap. 
+I'd change the color theme, replace the icon on the survey, change the questions to something else. 
