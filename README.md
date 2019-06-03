@@ -33,3 +33,6 @@ Updated to my github page on the index page.
 
 If I had more time, I would not use the chosen drop down and instead do radio buttons -- probably the ones from bootstrap. 
 I'd change the color theme, replace the icon on the survey, change the questions to something else. 
+
+## Push to Heroku 
+https://gentle-garden-88117.herokuapp.com/
