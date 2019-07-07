@@ -224,18 +224,33 @@
       // Form validation
       function validateForm() {
         var isValid = true;
-        $(".form-control").each(function () {
-          if ($(this).val() === "") {
+        // $(".form-control").each(function () {
+        //   if ($(this).val() === "") {
+        //     isValid = false;
+        //   }
+        // });
+
+        // $(".chosen-select").each(function () {
+
+        //   if ($(this).val() === "") {
+        //     isValid = false;
+        //   }
+        // });
+
+        var formFields = document.getElementsByClassName('form-control')
+        for (var i = 0; i < formFields.length; i++) {
+          if (formFields[i].value === '') {
             isValid = false;
           }
-        });
+        }
 
-        $(".chosen-select").each(function () {
-
-          if ($(this).val() === "") {
+        var chosenSelectFields = document.getElementsByClassName('chosen-select')
+        for (var i = 0; i < chosenSelectFields.length; i++) {
+          if (chosenSelectFields[i].value === '') {
             isValid = false;
           }
-        });
+        }
+
         return isValid;
       }
 
